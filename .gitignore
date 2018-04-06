@@ -41,7 +41,8 @@ local.properties
 *.rar
 
 #target folder from Maven
-target/
+*/target/**
+target/**
 
 #Servers folder from Tomcat
 Servers/
