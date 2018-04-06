@@ -13,9 +13,4 @@ spring:
       label: dev
       server: 
         git: 
-          uri: https://gitlab.com/revature_hydra/hydra-configuration.git
-          username: revdum
-          password: p4ssw0rd
-
-
-
+          uri: //${user.dir}/../hydra-configurationBAM
