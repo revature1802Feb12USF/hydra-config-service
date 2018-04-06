@@ -5,17 +5,15 @@ security:
   basic:
     enabled: false
 
-spring: 
+spring:
+  profiles:
+    active: native
   application: 
     name: config-service
   cloud:
-    config: 
-      label: dev
+    config:
       server: 
-        git: 
-          uri: https://gitlab.com/revature_hydra/hydra-configuration.git
-          username: revdum
-          password: p4ssw0rd
-
-
-
+        native: 
+          searchLocations: file:///${user.dir}/../hydra-configurationBAM
+          
+#          searchLocations: file:///${user.home}/Desktop/git/BAM/hydra-configurationBAM
