@@ -1,0 +1,7 @@
+applications:
+- name: hydra-config-service
+  memory: 700M
+  instances: 1
+  random-route: false
+  buildpack: https://github.com/cloudfoundry/java-buildpack.git
+  path: target/hydra-config-service-0.0.1-SNAPSHOT.jar
