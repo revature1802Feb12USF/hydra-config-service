@@ -5,3 +5,6 @@ applications:
   random-route: false
   buildpack: https://github.com/cloudfoundry/java-buildpack.git
   path: target/hydra-config-service-0.0.1-SNAPSHOT.jar
+# env:
+#   SPRING_PROFILES_ACTIVE: dev
+#   JBP_CONFIG_JAVA_MAIN: '{ arguments: "arg0 arg1" }'

@@ -1,19 +1,17 @@
 server:
-  port: 8888
+  port: 80
 
 security:
   basic:
     enabled: false
 
 spring:
-  profiles:
-    active: native
+#  profiles:
+#    active: native
   application: 
     name: config-service
   cloud:
     config:
       server: 
-        native: 
-          searchLocations: file:///${user.dir}/../hydra-configurationBAM
-          
-#          searchLocations: file:///${user.home}/Desktop/git/BAM/hydra-configurationBAM
+        git:
+          uri: https://github.com/revature1802Feb12USF/hydra-configurationBAM.git
