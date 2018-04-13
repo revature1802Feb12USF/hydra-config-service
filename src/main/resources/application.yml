@@ -1,13 +1,13 @@
 server:
-  port: 8888
+  port: 80
 
 security:
   basic:
     enabled: false
 
 spring:
-  profiles:
-    active: native
+#  profiles:
+#    active: native
   application: 
     name: hydra-config-service
   cloud:
