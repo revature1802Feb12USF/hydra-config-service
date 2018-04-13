@@ -9,11 +9,9 @@ spring:
   profiles:
     active: native
   application: 
-    name: config-service
+    name: hydra-config-service
   cloud:
     config:
       server: 
         native: 
           searchLocations: file:///${user.dir}/../hydra-configurationBAM
-          
-#          searchLocations: file:///${user.home}/Desktop/git/BAM/hydra-configurationBAM
